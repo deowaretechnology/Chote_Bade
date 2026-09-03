@@ -11,19 +11,39 @@
       "problem": "Customers send enquiries via WhatsApp. Appointments are managed manually.",
       "before": "The owner manually checks every message and shares availability — during busy hours, enquiries get missed.",
       "solution": "A simple booking flow: browse services, pick a time slot, and get confirmation and reminders automatically.",
-      "flow": ["Services", "Booking", "Confirmation", "Reminder"],
+      "flow": [
+        "Services",
+        "Booking",
+        "Confirmation",
+        "Reminder"
+      ],
       "whyItHelps": "Less back-and-forth communication, and the owner doesn't have to manually reply to every message.",
       "cta": "Explore Salon Demo",
       "websiteLabel": "View Live Demo Site",
       "websiteUrl": "",
-      "techStack": ["Next.js", "WhatsApp API", "Sanity CMS"],
+      "techStack": [
+        "Next.js",
+        "WhatsApp API",
+        "Sanity CMS"
+      ],
       "results": [
-        { "value": "0", "label": "Missed enquiries (example)" },
-        { "value": "~1 hr/day", "label": "Time saved (example)" },
-        { "value": "100%", "label": "Bookings tracked automatically" }
+        {
+          "value": "0",
+          "label": "Missed enquiries (example)"
+        },
+        {
+          "value": "~1 hr/day",
+          "label": "Time saved (example)"
+        },
+        {
+          "value": "100%",
+          "label": "Bookings tracked automatically"
+        }
       ],
       "testimonialQuote": "With this kind of booking system, salon owners can see how many bookings they have for the day right when they start — without digging through WhatsApp.",
-      "testimonialAuthor": "Illustrative example, not a real client quote"
+      "testimonialAuthor": "Illustrative example, not a real client quote",
+      "problemPoints": [],
+      "solutionPoints": []
     },
     {
       "slug": "jewellery",
@@ -33,19 +53,39 @@
       "problem": "Customers browse products, but enquiring about a specific product isn't easy.",
       "before": "Customers had to make a separate call or DM to find out the price or availability, which took time.",
       "solution": "Browse the catalogue, send a direct enquiry on any product, and the team follows up.",
-      "flow": ["Catalogue", "Product", "Enquiry", "Follow-up"],
+      "flow": [
+        "Catalogue",
+        "Product",
+        "Enquiry",
+        "Follow-up"
+      ],
       "whyItHelps": "Customers get a clear next step instantly, and enquiries never get missed.",
       "cta": "Explore Jewellery Demo",
       "websiteLabel": "View Live Demo Site",
       "websiteUrl": "",
-      "techStack": ["Next.js", "Product Catalogue", "WhatsApp Enquiry"],
+      "techStack": [
+        "Next.js",
+        "Product Catalogue",
+        "WhatsApp Enquiry"
+      ],
       "results": [
-        { "value": "0", "label": "Enquiries lost in DMs (example)" },
-        { "value": "1 click", "label": "From product to enquiry" },
-        { "value": "100%", "label": "Enquiries land in one place" }
+        {
+          "value": "0",
+          "label": "Enquiries lost in DMs (example)"
+        },
+        {
+          "value": "1 click",
+          "label": "From product to enquiry"
+        },
+        {
+          "value": "100%",
+          "label": "Enquiries land in one place"
+        }
       ],
       "testimonialQuote": "When customers get a clear, instant enquiry option, following up becomes easy — no interested buyer slips through.",
-      "testimonialAuthor": "Illustrative example, not a real client quote"
+      "testimonialAuthor": "Illustrative example, not a real client quote",
+      "problemPoints": [],
+      "solutionPoints": []
     },
     {
       "slug": "cafe",
@@ -55,19 +95,39 @@
       "problem": "Menu, location, and customer information are scattered across different places.",
       "before": "Customers had to check multiple apps to find the menu, timings, and location.",
       "solution": "Menu, location, and order/enquiry option on a single page — everything in one place.",
-      "flow": ["Menu", "Customer Action", "Order / Enquiry", "Visit"],
+      "flow": [
+        "Menu",
+        "Customer Action",
+        "Order / Enquiry",
+        "Visit"
+      ],
       "whyItHelps": "Customers get everything in one place, making it easier to decide.",
       "cta": "Explore Cafe Demo",
       "websiteLabel": "View Live Demo Site",
       "websiteUrl": "",
-      "techStack": ["Next.js", "Digital Menu", "Location + Order Flow"],
+      "techStack": [
+        "Next.js",
+        "Digital Menu",
+        "Location + Order Flow"
+      ],
       "results": [
-        { "value": "1 page", "label": "Menu + location + order (example)" },
-        { "value": "0", "label": "Apps customer needs to check" },
-        { "value": "Faster", "label": "Decision to visit or order" }
+        {
+          "value": "1 page",
+          "label": "Menu + location + order (example)"
+        },
+        {
+          "value": "0",
+          "label": "Apps customer needs to check"
+        },
+        {
+          "value": "Faster",
+          "label": "Decision to visit or order"
+        }
       ],
       "testimonialQuote": "With everything in one place, customers decide faster — whether it's ordering or visiting, both become easy.",
-      "testimonialAuthor": "Illustrative example, not a real client quote"
+      "testimonialAuthor": "Illustrative example, not a real client quote",
+      "problemPoints": [],
+      "solutionPoints": []
     },
     {
       "slug": "consultant",
@@ -77,7 +137,12 @@
       "problem": "Leads come in from multiple channels and follow-up is managed manually.",
       "before": "Leads came in through WhatsApp, email, and calls, and it was hard to track which lead still needed follow-up.",
       "solution": "A simple system that qualifies the lead, books an appointment, and sends a follow-up reminder.",
-      "flow": ["Lead", "Qualification", "Appointment", "Follow-up"],
+      "flow": [
+        "Lead",
+        "Qualification",
+        "Appointment",
+        "Follow-up"
+      ],
       "whyItHelps": "No lead is left without follow-up, and everything is tracked in one place.",
       "cta": "Explore Consultant Demo",
       "websiteLabel": "View Live Demo Site",
@@ -88,12 +153,23 @@
         "Appointment Booking"
       ],
       "results": [
-        { "value": "0", "label": "Leads lost to follow-up (example)" },
-        { "value": "1 flow", "label": "Qualify + book + remind" },
-        { "value": "100%", "label": "Leads tracked in one place" }
+        {
+          "value": "0",
+          "label": "Leads lost to follow-up (example)"
+        },
+        {
+          "value": "1 flow",
+          "label": "Qualify + book + remind"
+        },
+        {
+          "value": "100%",
+          "label": "Leads tracked in one place"
+        }
       ],
       "testimonialQuote": "When a lead qualifies itself and books its own appointment, the consultant's time goes only into actual conversations.",
-      "testimonialAuthor": "Illustrative example, not a real client quote"
+      "testimonialAuthor": "Illustrative example, not a real client quote",
+      "problemPoints": [],
+      "solutionPoints": []
     }
   ]
 }

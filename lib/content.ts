@@ -38,11 +38,6 @@ export async function getSolutionItems(): Promise<SolutionItem[]> {
 }
 
 // ---------- Demos ----------
-export interface DemoResult {
-  value: string;
-  label: string;
-}
-
 export interface DemoItem {
   slug: string;
   business: string;
@@ -52,29 +47,44 @@ export interface DemoItem {
   before: string;
   solution: string;
   flow: string[];
-  whyItHelps: string;
   cta: string;
   websiteLabel?: string;
   websiteUrl?: string;
   techStack?: string[];
-  results?: DemoResult[];
-  testimonialQuote?: string;
-  testimonialAuthor?: string;
   /** Optional real screenshot/photo uploaded in Sanity; when present, replaces the illustrative mockup card. */
   coverImageUrl?: string | null;
+  /** Bullet points shown under the Problem paragraph on the detail page. */
+  problemPoints?: string[];
+  /** Bullet points shown under the Solution paragraph on the detail page. */
+  solutionPoints?: string[];
+  /** Optional image shown alongside the Solution section. */
+  solutionImageUrl?: string | null;
+  /** Optional unlimited image gallery shown on the detail page. */
+  galleryUrls?: string[];
 }
 
 export async function getDemoItems(): Promise<DemoItem[]> {
-  const query = `*[_type == "demo"] | order(order asc){ "slug": slug.current, business, icon, accent, coverImage, problem, before, solution, flow, whyItHelps, cta, websiteLabel, websiteUrl, techStack, results, testimonialQuote, testimonialAuthor }`;
-  const raw = await fetchSanity<Array<DemoItem & { coverImage?: unknown }>>(
-    query,
-    demosJson.items as DemoItem[],
-  );
+  const query = `*[_type == "demo"] | order(order asc){
+    "slug": slug.current, business, icon, accent, coverImage, problem, before, solution,
+    problemPoints, solutionPoints, solutionImage, gallery,
+    flow, cta, websiteLabel, websiteUrl, techStack
+  }`;
+  const raw = await fetchSanity<
+    Array<DemoItem & { coverImage?: unknown; solutionImage?: unknown; gallery?: unknown[] }>
+  >(query, demosJson.items as DemoItem[]);
   return raw.map((d) => ({
     ...d,
     coverImageUrl: d.coverImage
       ? (urlFor(d.coverImage)?.width(600).url() ?? null)
       : (d.coverImageUrl ?? null),
+    solutionImageUrl: d.solutionImage
+      ? (urlFor(d.solutionImage)?.width(700).url() ?? null)
+      : (d.solutionImageUrl ?? null),
+    galleryUrls: Array.isArray(d.gallery) && d.gallery.length > 0
+      ? d.gallery
+          .map((img) => urlFor(img)?.width(900).url())
+          .filter((url): url is string => Boolean(url))
+      : (d.galleryUrls ?? []),
   }));
 }
 
