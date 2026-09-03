@@ -13,7 +13,7 @@ import Reveal from "@/components/Reveal";
 
 type ProcessStep = {
   title: string;
-  description: string;
+  body: string;
 };
 
 type ProcessStepsProps = {
@@ -200,7 +200,7 @@ function Step({ step, index }: { step: ProcessStep; index: number }) {
             </h3>
 
             <p className="mt-2 text-[11px] md:text-xs leading-5 text-ink-soft">
-              {step.description}
+              {step.body}
             </p>
           </div>
 
