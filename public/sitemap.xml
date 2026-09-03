@@ -1,0 +1,40 @@
+import type { MetadataRoute } from "next";
+import { getDemoItems, getCaseStudies } from "@/lib/content";
+
+const SITE_URL = "https://chotebade.in";
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const [demos, caseStudies] = await Promise.all([
+    getDemoItems(),
+    getCaseStudies(),
+  ]);
+
+  const staticRoutes: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/`, lastModified: new Date(), changeFrequency: "weekly", priority: 1.0 },
+    { url: `${SITE_URL}/problems`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE_URL}/solutions`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE_URL}/demos`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE_URL}/case-studies`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE_URL}/how-we-work`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/contact`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/privacy-policy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
+    { url: `${SITE_URL}/terms-and-conditions`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
+  ];
+
+  const demoRoutes: MetadataRoute.Sitemap = demos.map((d) => ({
+    url: `${SITE_URL}/demos/${d.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.64,
+  }));
+
+  const caseStudyRoutes: MetadataRoute.Sitemap = caseStudies.map((cs) => ({
+    url: `${SITE_URL}/case-studies/${cs.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.64,
+  }));
+
+  return [...staticRoutes, ...demoRoutes, ...caseStudyRoutes];
+}

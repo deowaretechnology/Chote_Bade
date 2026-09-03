@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Link2, Camera, MessageCircle, type LucideIcon } from "lucide-react";
+import { Link2, Camera, MessageCircle, Phone, MapPin, type LucideIcon } from "lucide-react";
 import siteConfig from "../data/siteConfig.json";
 
 const socialIcons: Record<string, LucideIcon> = {
@@ -101,18 +101,37 @@ export default function Footer() {
               </a>
 
               <a
-                href={siteConfig.brand.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`tel:${siteConfig.brand.phone1.replace(/\s/g, "")}`}
                 className="
+                  flex items-center gap-2
                   text-sm text-white/80
                   hover:text-saffron
                   transition-colors
                   w-fit
                 "
               >
-                {siteConfig.brand.whatsappDisplay}
+                <Phone size={13} className="shrink-0" />
+                {siteConfig.brand.phone1}
               </a>
+
+              <a
+                href={`tel:${siteConfig.brand.phone2.replace(/\s/g, "")}`}
+                className="
+                  flex items-center gap-2
+                  text-sm text-white/80
+                  hover:text-saffron
+                  transition-colors
+                  w-fit
+                "
+              >
+                <Phone size={13} className="shrink-0" />
+                {siteConfig.brand.phone2}
+              </a>
+
+              <span className="flex items-start gap-2 text-sm text-white/70 mt-1">
+                <MapPin size={13} className="shrink-0 mt-0.5" />
+                {siteConfig.brand.address}
+              </span>
             </div>
           </div>
         </div>
@@ -128,7 +147,20 @@ export default function Footer() {
             text-xs text-white/40
           "
         >
-          <span>{siteConfig.footer.copyright}</span>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+            <span>{siteConfig.footer.copyright}</span>
+            <div className="flex items-center gap-4">
+              {siteConfig.footer.legalLinks.map((l) => (
+                <Link
+                  key={l.path}
+                  href={l.path}
+                  className="hover:text-saffron transition-colors"
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
 
           <span className="font-display italic text-white/50">
             &ldquo;{siteConfig.brand.tagline}&rdquo;

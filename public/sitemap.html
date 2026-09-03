@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sitemap | ChoteBade</title>
+  <meta name="description" content="Browse all pages on the ChoteBade website." />
+  <meta name="robots" content="index, follow" />
+  <style>
+    :root {
+      --cream: #fdf9f2;
+      --ink: #221a14;
+      --ink-soft: #6b5f54;
+      --saffron: #f1720f;
+      --saffron-dark: #c85c0a;
+      --navy: #16233b;
+      --line: #ece3d6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+    a.home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink-soft);
+      text-decoration: none;
+      margin-bottom: 32px;
+    }
+    a.home-link:hover { color: var(--saffron-dark); }
+    h1 {
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin: 0 0 12px;
+    }
+    p.intro {
+      color: var(--ink-soft);
+      font-size: 16px;
+      margin: 0 0 48px;
+    }
+    section { margin-bottom: 40px; }
+    h2 {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--saffron-dark);
+      margin: 0 0 16px;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    li {
+      border-bottom: 1px solid var(--line);
+    }
+    li a {
+      display: block;
+      padding: 12px 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    li a:hover { color: var(--saffron-dark); }
+    li a span.desc {
+      display: block;
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--ink-soft);
+      margin-top: 2px;
+    }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="home-link" href="/">&larr; Back to ChoteBade</a>
+    <h1>Sitemap</h1>
+    <p class="intro">A complete list of pages on the ChoteBade website.</p>
+
+    <section>
+      <h2>Main Pages</h2>
+      <ul>
+        <li><a href="/">Home<span class="desc">Chhota Business, Bade Sapne. Aapki Digital Key.</span></a></li>
+        <li><a href="/problems">Problems<span class="desc">Real problems small businesses face online</span></a></li>
+        <li><a href="/solutions">Solutions<span class="desc">What we build to solve those problems</span></a></li>
+        <li><a href="/demos">Demo Lab<span class="desc">Try our working examples for different business types</span></a></li>
+        <li><a href="/case-studies">Case Studies<span class="desc">Real projects and their results</span></a></li>
+        <li><a href="/how-we-work">How We Work<span class="desc">Our process, from problem to solution</span></a></li>
+        <li><a href="/about">About<span class="desc">Who ChoteBade is and who we build for</span></a></li>
+        <li><a href="/contact">Contact<span class="desc">Get in touch about your business</span></a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Legal</h2>
+      <ul>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; 2026 ChoteBade. All rights reserved. For search engines, see <a href="/sitemap.xml" style="color: var(--saffron-dark);">sitemap.xml</a>.
+    </footer>
+  </div>
+</body>
+</html>

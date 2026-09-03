@@ -3,7 +3,10 @@
     "name": "ChoteBade",
     "tagline": "Small Business, Big Dreams.",
     "subTagline": "Your Digital Key.",
-    "email": "hello@chotebade.in",
+    "email": "deowaretechnology@gmail.com",
+    "phone1": "+91 89694 57707",
+    "phone2": "+91 93042 22640",
+    "address": "Kolkata, West Bengal 700102, India",
     "whatsapp": "https://wa.me/910000000000",
     "whatsappDisplay": "+91 00000 00000"
   },
@@ -27,6 +30,11 @@
       { "label": "How We Work", "path": "/how-we-work" },
       { "label": "About", "path": "/about" },
       { "label": "Contact", "path": "/contact" }
+    ],
+    "legalLinks": [
+      { "label": "Privacy Policy", "path": "/privacy-policy" },
+      { "label": "Terms & Conditions", "path": "/terms-and-conditions" },
+      { "label": "Sitemap", "path": "/sitemap.html" }
     ],
     "social": [
       { "label": "LinkedIn", "url": "https://linkedin.com" },

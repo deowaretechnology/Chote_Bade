@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { FormEvent } from "react";
-import { ArrowRight, Check, MessageCircle } from "lucide-react";
+import { ArrowRight, Check, MessageCircle, Phone, Mail, MapPin } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import siteConfig from "@/data/siteConfig.json";
 
@@ -63,7 +63,7 @@ export default function Contact() {
                 href={siteConfig.brand.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 card p-5 hover:border-green/40 transition-colors"
+                className="flex items-center gap-4 card p-5 hover:border-green/40 transition-colors mb-4"
               >
                 <div className="h-11 w-11 rounded-full bg-green flex items-center justify-center shrink-0">
                   <MessageCircle size={19} className="text-white" fill="currentColor" strokeWidth={0} />
@@ -73,6 +73,40 @@ export default function Contact() {
                   <p className="text-[13px] text-ink-soft">{siteConfig.brand.whatsappDisplay}</p>
                 </div>
               </a>
+
+              <div className="card p-5 flex flex-col gap-4">
+                <a href={`mailto:${siteConfig.brand.email}`} className="flex items-center gap-4 hover:opacity-80 transition-opacity">
+                  <div className="h-11 w-11 rounded-full bg-saffron-tint flex items-center justify-center shrink-0">
+                    <Mail size={18} className="text-saffron-dark" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-[14px] text-ink">Email</p>
+                    <p className="text-[13px] text-ink-soft">{siteConfig.brand.email}</p>
+                  </div>
+                </a>
+
+                <a href={`tel:${siteConfig.brand.phone1.replace(/\s/g, "")}`} className="flex items-center gap-4 hover:opacity-80 transition-opacity">
+                  <div className="h-11 w-11 rounded-full bg-saffron-tint flex items-center justify-center shrink-0">
+                    <Phone size={18} className="text-saffron-dark" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-[14px] text-ink">Call us</p>
+                    <p className="text-[13px] text-ink-soft">
+                      {siteConfig.brand.phone1} / {siteConfig.brand.phone2}
+                    </p>
+                  </div>
+                </a>
+
+                <div className="flex items-center gap-4">
+                  <div className="h-11 w-11 rounded-full bg-saffron-tint flex items-center justify-center shrink-0">
+                    <MapPin size={18} className="text-saffron-dark" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-[14px] text-ink">Address</p>
+                    <p className="text-[13px] text-ink-soft">{siteConfig.brand.address}</p>
+                  </div>
+                </div>
+              </div>
             </Reveal>
           </div>
 
