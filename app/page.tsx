@@ -258,13 +258,14 @@ export default function Home() {
           </Reveal>
 
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch">
             {demos.items.map((d, i) => (
-              <DemoCard
-                key={d.slug}
-                {...d}
-                delay={i * 0.08}
-              />
+              <div key={d.slug} className="h-full flex">
+                <DemoCard
+                  {...d}
+                  delay={i * 0.08}
+                />
+              </div>
             ))}
           </div>
 
