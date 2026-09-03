@@ -12,8 +12,9 @@ interface RevealProps {
 
 export default function Reveal({ children, delay = 0, width = "100%", y = 24 }: RevealProps) {
   return (
-    <div style={{ position: "relative", width, overflow: "visible" }}>
+    <div style={{ position: "relative", width, overflow: "visible", height: "100%" }}>
       <motion.div
+        style={{ height: "100%" }}
         variants={{
           hidden: { opacity: 0, y },
           visible: { opacity: 1, y: 0 },
