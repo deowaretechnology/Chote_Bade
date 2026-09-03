@@ -1,0 +1,48 @@
+{
+  "label": "Real Business Problems",
+  "heading": "Har business ki apni problem hoti hai.",
+  "description": "Sometimes customers come in, but enquiries aren't managed. Sometimes bookings happen, but tracking is difficult. Sometimes there's a website, but it doesn't actually benefit the business.",
+  "items": [
+    {
+      "id": "lost-enquiries",
+      "icon": "message-square-warning",
+      "title": "Lost Enquiries",
+      "body": "Customers reach out through WhatsApp, Instagram, and calls, but important enquiries easily get missed."
+    },
+    {
+      "id": "manual-work",
+      "icon": "notebook-pen",
+      "title": "Manual Work",
+      "body": "Bookings, customer details, orders, and follow-ups are still managed on notebooks, Excel, or WhatsApp."
+    },
+    {
+      "id": "repeated-questions",
+      "icon": "repeat",
+      "title": "Repeated Questions",
+      "body": "Customers repeatedly ask the same information: price, services, timings, location, availability, etc."
+    },
+    {
+      "id": "website-no-help",
+      "icon": "globe",
+      "title": "Website That Doesn't Help",
+      "body": "The website is online, but customers don't get a clear next step."
+    },
+    {
+      "id": "scattered-info",
+      "icon": "layout-grid",
+      "title": "Scattered Information",
+      "body": "Business information is scattered across different apps and places."
+    },
+    {
+      "id": "follow-up",
+      "icon": "phone-missed",
+      "title": "Follow-up Problems",
+      "body": "Following up with an interested customer later on gets missed."
+    }
+  ],
+  "cta": {
+    "prompt": "Facing something similar?",
+    "label": "Tell Us Your Problem",
+    "path": "/contact"
+  }
+}

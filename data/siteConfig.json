@@ -1,0 +1,38 @@
+{
+  "brand": {
+    "name": "ChoteBade",
+    "tagline": "Small Business, Big Dreams.",
+    "subTagline": "Your Digital Key.",
+    "email": "hello@chotebade.in",
+    "whatsapp": "https://wa.me/910000000000",
+    "whatsappDisplay": "+91 00000 00000"
+  },
+  "nav": [
+    { "label": "Home", "path": "/" },
+    { "label": "Problems", "path": "/problems" },
+    { "label": "Solutions", "path": "/solutions" },
+    { "label": "Demo Lab", "path": "/demos" },
+    { "label": "How We Work", "path": "/how-we-work" },
+    { "label": "About", "path": "/about" }
+  ],
+  "navCta": "Let's Talk",
+  "footer": {
+    "about": "Small Business, Big Dreams. Your Digital Key.",
+    "links": [
+      { "label": "Home", "path": "/" },
+      { "label": "Problems", "path": "/problems" },
+      { "label": "Solutions", "path": "/solutions" },
+      { "label": "Demo Lab", "path": "/demos" },
+      { "label": "Case Studies", "path": "/case-studies" },
+      { "label": "How We Work", "path": "/how-we-work" },
+      { "label": "About", "path": "/about" },
+      { "label": "Contact", "path": "/contact" }
+    ],
+    "social": [
+      { "label": "LinkedIn", "url": "https://linkedin.com" },
+      { "label": "Instagram", "url": "https://instagram.com" },
+      { "label": "WhatsApp", "url": "https://wa.me/910000000000" }
+    ],
+    "copyright": "© 2026 ChoteBade. All rights reserved."
+  }
+}

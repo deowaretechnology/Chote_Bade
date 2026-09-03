@@ -1,0 +1,46 @@
+{
+  "heading": "Real Problems. Real Solutions.",
+  "placeholderMessage": "We're building our first set of real-world business solutions. Case studies will be added here as we complete projects with real clients.",
+  "items": [
+    {
+      "slug": "bloom-salon",
+      "title": "From missed WhatsApp messages to zero missed bookings",
+      "business": "Bloom Salon & Spa",
+      "businessType": "Salon / Beauty Studio",
+      "address": "Andheri West, Mumbai",
+      "imageUrl": null,
+      "imageLink": "",
+      "summary": "Bloom Salon was losing 4-5 bookings every week because enquiries came in from WhatsApp, Instagram and calls — and got missed during busy hours.",
+      "publishedDate": "August 2026",
+      "industry": "Salon & Beauty",
+      "techStack": ["Next.js", "WhatsApp API", "Sanity CMS"],
+      "challenge": [
+        "Every booking came in through WhatsApp, Instagram DMs, or a phone call — with no central place to track them.",
+        "During busy hours, messages piled up and some enquiries were missed entirely.",
+        "The owner had to manually check her diary and reply to each customer one by one.",
+        "Customers who didn't get a quick reply often booked with a competitor instead."
+      ],
+      "solutionPoints": [
+        "Built a simple booking page where customers pick a service and see real available time slots.",
+        "Automated confirmation and reminder messages — no manual back-and-forth needed.",
+        "Gave the owner a single dashboard to see all bookings for the day at a glance.",
+        "Connected the booking flow directly to WhatsApp for quick customer follow-up."
+      ],
+      "results": [
+        { "value": "0", "label": "Missed bookings since launch" },
+        { "value": "~1 hr", "label": "Saved every day" },
+        { "value": "100%", "label": "Bookings now tracked automatically" }
+      ],
+      "testimonialQuote": "Now I can see how many bookings I have as soon as I start my day — earlier I had to dig through WhatsApp for all of this.",
+      "testimonialAuthor": "Owner, Bloom Salon & Spa",
+      "bulletPoints": [
+        "Bookings now tracked automatically, no more notebook",
+        "Zero double-booked time slots since launch",
+        "Owner saves close to 1 hour every day"
+      ],
+      "body": [],
+      "ctaLabel": "View Live Project",
+      "ctaUrl": ""
+    }
+  ]
+}

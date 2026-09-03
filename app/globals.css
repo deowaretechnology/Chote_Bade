@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+
+  /* Kesari (saffron) primary, deep navy + forest green as supporting official-feel accents */
+  --color-saffron: #F1720F;
+  --color-saffron-dark: #C85807;
+  --color-saffron-light: #FFE3C2;
+  --color-saffron-tint: #FFF3E6;
+
+  --color-navy: #16233B;
+
+  --color-green: #1E7A55;
+  --color-green-tint: #E7F5EE;
+
+  --color-ink: #221B14;
+  --color-ink-soft: #6B6156;
+
+  --color-cream: #FFFBF6;
+  --color-cream-2: #FFF3E7;
+  --color-line: #22180F1A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  body {
+    @apply bg-cream text-ink antialiased selection:bg-saffron selection:text-white;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply tracking-tight text-ink;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-saffron);
+    outline-offset: 3px;
+  }
+}
+
+/* ---------- shared helpers ---------- */
+@layer components {
+  .container-page {
+    @apply max-w-7xl mx-auto px-6 md:px-10;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[12px] font-bold uppercase tracking-widest text-saffron-dark mb-4;
+  }
+  .eyebrow::before {
+    content: '';
+    @apply h-1.5 w-1.5 rounded-full bg-saffron;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl font-semibold text-[14.5px] transition-all duration-200 bg-saffron text-white px-7 py-3.5 shadow-[0_10px_24px_-10px_rgba(241,114,15,0.55)] hover:bg-saffron-dark hover:-translate-y-0.5;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl font-semibold text-[14.5px] transition-all duration-200 bg-white text-ink px-7 py-3.5 border border-line hover:border-ink/30 hover:-translate-y-0.5;
+  }
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl font-semibold text-[14.5px] transition-all duration-200 bg-navy text-white px-7 py-3.5 hover:bg-[#0F1929] hover:-translate-y-0.5;
+  }
+
+  .card {
+    @apply bg-white border border-line rounded-2xl;
+  }
+
+  .input {
+    @apply w-full px-4 py-3 rounded-xl border border-line bg-white text-[14.5px] text-ink outline-none transition-colors;
+  }
+  .input:focus {
+    @apply border-saffron;
+  }
+
+  .section {
+    @apply py-20 md:py-28;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-1.5 text-[12px] font-semibold px-3 py-1.5 rounded-full;
+  }
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.animate-float {
+  animation: float-y 5s ease-in-out infinite;
+}
+
+@keyframes dash-flow {
+  to { stroke-dashoffset: -24; }
+}
+.animate-dash {
+  stroke-dasharray: 4 6;
+  animation: dash-flow 1.2s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "heading": "Not just another website agency.",
+  "items": [
+    { "icon": "search-check", "title": "Problem First", "body": "We understand the problem before the technology." },
+    { "icon": "puzzle", "title": "Built Around Your Business", "body": "Your workflow, your solution." },
+    { "icon": "feather", "title": "Simple", "body": "No unnecessary features." },
+    { "icon": "hammer", "title": "Practical", "body": "What we build, we build for actual use." },
+    { "icon": "sprout", "title": "Start Small", "body": "Solve the important problem first." },
+    { "icon": "trending-up", "title": "Grow Later", "body": "The solution grows along with the business." }
+  ]
+}

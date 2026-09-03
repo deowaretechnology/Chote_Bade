@@ -1,0 +1,69 @@
+{
+  "label": "What We Build",
+  "heading": "Jo aapke business ko chahiye, wahi banayenge.",
+  "items": [
+    {
+      "id": "websites",
+      "icon": "layout-template",
+      "title": "Business Websites",
+      "description": "Not just a beautiful website. A website that helps customers take the next step.",
+      "points": ["Business websites", "Landing pages", "Service pages", "Product catalogues", "Contact / enquiry pages"]
+    },
+    {
+      "id": "customer-experience",
+      "icon": "calendar-check",
+      "title": "Customer Experience",
+      "description": "Let customers book or enquire easily — without back-and-forth.",
+      "points": ["Booking", "Enquiry forms", "Product enquiries", "Customer portals", "Contact workflows"]
+    },
+    {
+      "id": "business-tools",
+      "icon": "layout-dashboard",
+      "title": "Business Tools",
+      "description": "Simple internal tools that make your daily work easier.",
+      "points": ["Admin dashboards", "Order management", "Customer records", "Internal tools", "Simple business management systems"]
+    },
+    {
+      "id": "automation",
+      "icon": "zap",
+      "title": "Automation",
+      "description": "Save your time by automating repetitive work.",
+      "points": ["Reminders", "Notifications", "Follow-ups", "Repetitive task automation"]
+    },
+    {
+      "id": "integrations",
+      "icon": "plug-zap",
+      "title": "Integrations",
+      "description": "Connect directly with your existing tools.",
+      "points": ["WhatsApp", "Email", "Payments", "Existing tools", "APIs"]
+    }
+  ],
+  "websiteOffer": {
+    "heading": "Need a Website? Start from ₹7,000.",
+    "description": "A clean, responsive and business-focused website for small businesses.",
+    "startingPrice": "7,000",
+    "includes": [
+      "Custom design",
+      "Responsive design",
+      "Business pages",
+      "Contact section",
+      "WhatsApp integration",
+      "Basic SEO",
+      "Deployment"
+    ],
+    "additionalLanguageNote": "+₹2,000 / language",
+    "pricingExamples": [
+      { "label": "1 Language", "price": "7,000" },
+      { "label": "2 Languages", "price": "9,000" },
+      { "label": "3 Languages", "price": "11,000" }
+    ],
+    "note": "Custom features and advanced business systems are quoted separately.",
+    "cta": "Start Your Website"
+  },
+  "buildYourWay": {
+    "heading": "Already have a website? Great.",
+    "description": "Your website could be built in any technology — HTML, CSS, JavaScript, React, WordPress, or anything else — it doesn't have to be rebuilt from scratch. We can review your existing website and identify what can be improved for your business.",
+    "flow": ["Your Existing Website", "Business Review", "Find Problems", "Improvements", "Better Digital Experience"],
+    "cta": "Get My Website Reviewed"
+  }
+}

@@ -1,0 +1,52 @@
+import {
+  MessageSquareWarning,
+  NotebookPen,
+  Repeat,
+  Globe,
+  LayoutGrid,
+  PhoneMissed,
+  LayoutTemplate,
+  CalendarCheck,
+  LayoutDashboard,
+  Zap,
+  PlugZap,
+  SearchCheck,
+  Puzzle,
+  Feather,
+  Hammer,
+  Sprout,
+  TrendingUp,
+  Scissors,
+  Gem,
+  Coffee,
+  Briefcase,
+  type LucideIcon,
+} from "lucide-react";
+
+export const iconMap: Record<string, LucideIcon> = {
+  "message-square-warning": MessageSquareWarning,
+  "notebook-pen": NotebookPen,
+  repeat: Repeat,
+  globe: Globe,
+  "layout-grid": LayoutGrid,
+  "phone-missed": PhoneMissed,
+  "layout-template": LayoutTemplate,
+  "calendar-check": CalendarCheck,
+  "layout-dashboard": LayoutDashboard,
+  zap: Zap,
+  "plug-zap": PlugZap,
+  "search-check": SearchCheck,
+  puzzle: Puzzle,
+  feather: Feather,
+  hammer: Hammer,
+  sprout: Sprout,
+  "trending-up": TrendingUp,
+  scissors: Scissors,
+  gem: Gem,
+  coffee: Coffee,
+  briefcase: Briefcase,
+};
+
+export function getIcon(name: string): LucideIcon {
+  return iconMap[name] || Zap;
+}

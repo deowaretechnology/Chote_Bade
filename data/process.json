@@ -1,0 +1,48 @@
+{
+  "philosophy": {
+    "heading": "Technology se pehle problem samajhte hain.",
+    "description": "Every business works differently. That's why we don't give every business the same solution. We understand the problem first. Then we decide what technology can actually improve."
+  },
+  "steps": [
+    {
+      "number": "01",
+      "title": "Understand",
+      "titleHi": "UNDERSTAND",
+      "body": "How does your business work?"
+    },
+    {
+      "number": "02",
+      "title": "Find the Problem",
+      "titleHi": "FIND THE PROBLEM",
+      "body": "Where are you losing time, customers, or opportunities?"
+    },
+    {
+      "number": "03",
+      "title": "Design the Solution",
+      "titleHi": "DESIGN THE SOLUTION",
+      "body": "Website? Tool? Automation? Or a simple improvement?"
+    },
+    {
+      "number": "04",
+      "title": "Build",
+      "titleHi": "BUILD",
+      "body": "A simple and useful solution."
+    },
+    {
+      "number": "05",
+      "title": "Improve",
+      "titleHi": "IMPROVE",
+      "body": "Based on real usage."
+    }
+  ],
+  "howWeWork": {
+    "heading": "Problem se solution tak.",
+    "steps": [
+      { "number": "01", "title": "Tell Us", "body": "What's difficult for you right now?" },
+      { "number": "02", "title": "Understand", "body": "We'll understand your current process." },
+      { "number": "03", "title": "Plan", "body": "We'll decide on the right solution." },
+      { "number": "04", "title": "Build", "body": "We'll build the website, tool, or automation." },
+      { "number": "05", "title": "Improve", "body": "We'll improve it based on real usage." }
+    ]
+  }
+}
